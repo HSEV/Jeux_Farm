@@ -2,8 +2,6 @@ import sqlite3
 
 # Connexion à la base de données (création si elle n'existe pas)
 conn = sqlite3.connect('game_database.db')
-
-# Création d'un curseur pour exécuter des requêtes
 cursor = conn.cursor()
 
 # Création des tables
@@ -25,6 +23,8 @@ CREATE TABLE IF NOT EXISTS players (
     user_id TEXT NOT NULL,               -- Référence à l'utilisateur
     gold INTEGER DEFAULT 0,                     -- Quantité d'or du joueur
     equipment_level INTEGER DEFAULT 1,          -- Niveau d'équipement
+    addiction_level INTEGER DEFAULT 0,          -- Niveau d'addiction
+    xp INTEGER DEFAULT 0,                       -- Points d'XP du joueur
     last_login TEXT DEFAULT CURRENT_TIMESTAMP, -- Dernière connexion
     FOREIGN KEY(user_id) REFERENCES users(user_id) -- Relation avec users
 );
