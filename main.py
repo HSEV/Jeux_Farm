@@ -9,7 +9,6 @@ init(autoreset=True)
 conn = sqlite3.connect("game_database.db")
 cursor = conn.cursor()
 
-# Helper functions
 
 # Fonction pour obtenir les informations du joueur à partir de son username
 def get_player(username):
