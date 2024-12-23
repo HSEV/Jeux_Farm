@@ -16,7 +16,11 @@ Make sure you have Python installed on your system. You can download it from [py
 pip install random
 pip install sqlite3
 pip install colorama
+```
 
------------------------
-Running the Game
+##Running the Game
+
 To start the game, run the main.py script:
+
+```sh
+python main.py
