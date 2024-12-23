@@ -18,7 +18,7 @@ pip install sqlite3
 pip install colorama
 ```
 
-##Running the Game
+## Running the Game
 
 To start the game, run the main.py script:
 
